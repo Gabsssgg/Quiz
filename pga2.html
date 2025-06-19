@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-Vindo</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    margin-top: 20px;
+}
+
+section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #4CAF50;
+    padding: 20px 0 10px;
+    font-size: 1.5em;
+}
+
+p {
+    line-height: 1.6;
+    padding: 10px 0;
+    font-size: 1em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        padding: 10px 0;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Bem-Vindo</h1>
+    </header>
+    <main>
+    <section>
+        <h2>Quiz sobre a Família</h2>
+        <p>Olá! Seja bem-vindo ao nosso quiz sobre a família.</p>
+        <p>Este quiz sobre a família foi criado para explorar de maneira divertida laços que nos unem às pessoas mais próximas. <br>
+           Por meio de perguntas leves e curiosas, você vai testar seus conhecimentos e curiosidades que fazem parte do nosso cotidiano. <br>
+           É uma ótima maneira de aprender e refletir! Vamos começar?</p>
+    </section>
+    <div class="container">
+    <a href="quiz.html">
+    <button>Começar Quiz</button>
+    </a>
+    </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    min-height: 100vh;
+    background-image: url(img/img.jpg);
+    background-size: cover;
+    background-position: center 30%;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 150px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 30px 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    backdrop-filter: blur(1px);
+}
+
+.container h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #ffffff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+}
+
+.entrar {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #f7f1f1;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.entrar:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        margin-top: 60px;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .input-box input {
+        font-size: 14px;
+        padding: 15px 40px 15px 15px;
+    }
+
+    .input-box i {
+        font-size: 18px;
+        right: 15px;
+    }
+
+    .entrar {
+        font-size: 14px;
+    }
+}

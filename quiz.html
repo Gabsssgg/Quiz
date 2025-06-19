@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Interativo</title>
+    </head>
+    <body>
+        <header>
+            <h1>Quiz interativo para familia</h1>
+            <p>Teste seus conhecimentos sobre um membro da familia e veja qual pontuação você consegue fazer!</p>
+        </header>
+        <main>
+            <!--introdução-->
+            <section>
+                <h2>Sobre esse quiz</h2>
+                <p><strong>Este quiz</strong> foi desenvolvido para testar seus conhecimentos sobre a familia intima, como foi sua criação e sua história.</p>
+                <p>Você encontrará diferentes tipos de perguntas, incluindo múltipla escolha, texto e perguntas de data.  <br>Desafie-se com este quiz!</p>
+            </section>
+            <!--Pergunta 1: múltipla escolha-->
+            <section>
+                <h2>Pergunta 1: Qual foi o ano do nascimento da Andria?</h2>
+                <form>
+                    <input type="radio" value="1989" id="p1a" name="pergunta1">
+                    <label for="p1a">1989</label><br>
+
+                    <input type="radio" value="1986" id="p1b" name="pergunta1">
+                    <label for="p1b">1986</label><br>
+
+                    <input type="radio" value="1999" id="p1c" name="pergunta1">
+                    <label for="p1c">1999</label><br>
+
+                    <input type="radio" value="1985" id="p1d" name="pergunta1">
+                    <label for="p1d">1985</label><br>
+                </form>
+            </section>
+            <!--Pergunta 2: texto-->
+            <section>
+                <h2> Pergunta 2: Como Maria Clara ganhou a cicatriz na testa? Por meio de um/uma ____</h2>
+                <form>
+                    <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta...">
+                </form>
+            </section>
+            <!--Pergunta 3: senha-->
+            <section>
+                <h2>Pergunta 3: Qual é o time de futebol que a "familia" torce?.</h2>
+                <form>
+                    <input type="text" id="p3" name="pergunta3" placeholder="Digite sua resposta...">
+                </form>
+            </section>
+            <!--Pergunta 4: data-->
+            <section>
+                <h2>Pergunta 4: Em que ano foi criado o GP da familia intima?</h2>
+                <form>
+                    <input type="date" id="p4" name="pergunta4">
+                </form>
+            </section>
+            <!--pergunta 5: seleção múltipla-->
+            <section>
+                <h2>Pergunta 5: Quais eram os apelidos da Maria.</h2>
+                <form>
+                    <input type="checkbox" id="p5a" name="pergunta5" value="Cabrita Teves">
+                    <label for="p5a">Cabrita Teves</label><br>
+
+                    <input type="checkbox" id="p5b" name="pergunta5" value="Mariola">
+                    <label for="p5b">Mariola</label><br>
+
+                    <input type="checkbox" id="p5c" name="pergunta5" value="Furacão">
+                    <label for="p5c">Furacão</label><br>
+
+                    <input type="checkbox" id="p5d" name="pergunta5" value="Banguela">
+                    <label for="p5d">Banguela</label><br>
+
+                    <input type="checkbox" id="p5e" name="pergunta5" value="Marica">
+                    <label for="p5e">Marica</label><br>
+                </form>
+            </section>
+            <!--pergunta 6: uplpad de arquivo-->
+            <section>
+                <h2>Pergunta 6: Faça um upload de um arquivo contendo foto de toda familia.</h2>
+                <form>
+                    <input type="file" id="p6" name="pergunta6">
+                </form>
+            </section>
+            <!--pergunta 7: menu suspenso-->
+            <section>
+                <h2>Pergunta 7: Selecione a comida favorita da Emily.</h2>
+                <form>
+                    <select name="pergunta7" id="p7">
+                        <option value="Pizza">Pizza</option>
+                        <option value="Lasanha">Lasanha</option>
+                        <option value="Frango Frito">Frango Frito</option>
+                        
+                    </select>
+                </form>
+            </section>
+            <!--pergunta 8: múltipla escolha-->
+            <section>
+                <h2>Pergunta 8: Qual foi o primeiro namorado da Adria?</h2>
+                <form>
+                    <input type="radio" value="Anderson" id="p1a" name="pergunta1">
+                    <label for="p1a">Anderson</label><br>
+
+                    <input type="radio" value="Ronaldo" id="p1b" name="pergunta1">
+                    <label for="p1b">Ronaldo</label><br>
+
+                    <input type="radio" value="Jhontan" id="p1c" name="pergunta1">
+                    <label for="p1c">Jhonatan</label><br>
+
+                    <input type="radio" value="Carlos" id="p1d" name="pergunta1">
+                    <label for="p1d">Carlos</label><br>
+
+                </form>
+            </section>
+            <!--Tabela de pontuação-->
+            <section>
+                <h2>Tabela de Pontuação</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Pontuação</th>
+                            <th>Avaliação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>0-2</td>
+                            <td>Não desista!</td>
+                        </tr>
+                        <tr>
+                            <td>3-4</td>
+                            <td>Você pode melhorar.</td>
+                        </tr>
+                        <tr>
+                            <td>5-7</td>
+                            <td>Bom! continue assim.</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Perfeito!</td>
+                        </tr>
+                     </tbody>
+                     <tfoot>
+                        <tr>
+                            <td colspan="2">Boa Sorte na próxima!</td>
+                        </tr>
+                     </tfoot>
+                </table>
+            </section>
+            <!--Lista de Respostas-->
+            <section>
+                <h2>Verifique suas Respostas</h2>
+                <details>
+                    <summary>Clique aqui para ver as respostas</summary>
+                    <ol>
+                        <li>1989</li>
+                        <li>Paulada na testa</li>
+                        <li>Flamengo</li>
+                        <li>2022</li>
+                        <li>Cabrita Teves, Furacão, Banguela</li>
+                        <li>Frango Frito</li>
+                        <li>Anderson</li>
+                    </ol>
+                </details>
+            </section>
+        </main>
+    </body>
+</html>
