@@ -7,11 +7,12 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
     min-height: 100vh;
     background-image: url(img/img.jpg);
     background-size: cover;
-    background-position: center 30%;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     padding: 20px;
 }
@@ -25,7 +26,7 @@ body {
     border-radius: 10px;
     color: #ffffff;
     padding: 30px 20px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(1px);
 }
 
@@ -84,8 +85,12 @@ body {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-
 @media (max-width: 480px) {
+    body {
+        padding: 10px;
+        background-position: center top; 
+    }
+
     .container {
         padding: 20px;
         margin-top: 60px;
@@ -104,6 +109,12 @@ body {
         font-size: 18px;
         right: 15px;
     }
+
+    .entrar {
+        font-size: 14px;
+    }
+}
+
 
     .entrar {
         font-size: 14px;
